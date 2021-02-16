@@ -8,11 +8,11 @@ let autocomplete = (obj, el, field = null) => {
 
   if (Array.isArray(output)) {
     el.innerHTML = '';
-    output.forEach(name => {
+    output.forEach(item => {
       let opt = document.createElement("option");
-      opt.text = name;
-      opt.value = name;
-      el.append(opt, null);
+      opt.text = item;
+      opt.value = item;
+      el.append(opt);
     });
   }
 }

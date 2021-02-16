@@ -4,20 +4,28 @@
 <head>
     <title>Simple Autocomplete Library with Vanilla JavaScript</title>
     <script src="main.js" type="module"></script>
-    <link rel=stylesheet src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Simple Autocomplete Library with Vanilla JavaScript</h1>
-    <h3>Using a simple HTML datalist, JavaScript modules, and recursive functions </h3>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark d-flex justify-content-between" style="margin-bottom: 20px;">
+        <div class="p-2"><a class="navbar-brand" href="https://www.easyprogramming.net">Easy Programming </a></div> 
+          <div class="p-2"><span id="subtitle" style="color: #fff;">Simple Autocomplete Library (SAL)</span></div>
+      </nav>
+    <div class="container">
+        <h1 class="display-5">Simple Autocomplete Library with Vanilla JavaScript</h1>
+        <p class="lead">Using a simple HTML datalist, JavaScript modules, and recursive functions to create a simple autocomplete library. 
+            Works with arrays, objects, and AJAX responses. </p>
 
-    <label for="autocomplete" class="form-label">Autocomplete Selector</label>
-    <input class="form-control" type="text" id="autocomplete" name="autocomplete" list="autocomplete-list"
-        placeholder="Type to search...">
+        <label for="autocomplete" class="form-label">Autocomplete Selector</label>
+        <input class="form-control form-control-lg" type="text" id="autocomplete" name="autocomplete" list="autocomplete-list"
+            placeholder="Type to search...">
 
-    <datalist id="autocomplete-list">
-        <!-- <option>Harry</option> -->
-    </datalist>
+        <datalist id="autocomplete-list">
+            <!-- <option>Harry</option> -->
+        </datalist>
+    </div>
 </body>
 
 </html>
