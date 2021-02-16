@@ -1,14 +1,14 @@
 let autocomplete = (obj, el, field = null) => {
-  let inner = [];
+  let output = [];
   if (field !== null) {
-    inner = convertObjToArray(obj, field, inner);
+    output = convertObjToArray(obj, field);
   } else {
-    inner = obj;
+    output = obj;
   }
 
-  if (Array.isArray(inner)) {
+  if (Array.isArray(output)) {
     el.innerHTML = '';
-    inner.forEach(name => {
+    output.forEach(name => {
       let opt = document.createElement("option");
       opt.text = name;
       opt.value = name;
@@ -18,20 +18,20 @@ let autocomplete = (obj, el, field = null) => {
 }
 
 let convertObjToArray = (obj, field) => {
-  let innerField = [];
+  let arrayOutput = [];
   let recurseObj = (obj, field) => {
       for (const prop in obj) {
         if(typeof(obj[prop]) == "object"){
           recurseObj(obj[prop], field);
         } else {
           if(prop == field) {
-              innerField.push(obj[prop]);
+              arrayOutput.push(obj[prop]);
           }
         }
       }
     };
   recurseObj(obj, field);
-  return innerField;
+  return arrayOutput;
 }
 
 export {
