@@ -4,9 +4,12 @@ This is a very quick and simple implementation of an Autocomplete Library in van
 
 Tutorial from [EasyProgramming.net](https://www.easyprogramming.net)
 
-## DEMO
+## Demo/Tutorial
 
-YouTube URL TBD
+A full video tutorial can be found on YouTube at https://www.youtube.com/watch?v=Yrf4lCR_yk4
+<a href="https://www.youtube.com/watch?v=Yrf4lCR_yk4" target="_blank"><img src="https://raw.githubusercontent.com/naztronaut/sal/master/images/AutoComplete.jpg" width="700px" alt="Simple Autocomplete Library in JS Tutorial"></a>
+
+More information on the tutorial can be found at https://www.easyprogramming.net/javascript/create_simple_autocomplete_lib.php
 
 ## Resources
 
